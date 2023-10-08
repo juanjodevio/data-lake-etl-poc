@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "data-lake-etl-poc"
+version = "0.1.0"
+description = ""
+authors = ["jpalomino-linus <86894607+juanjodevio@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "data_lake_etl_poc"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+dbt-athena-community = "^1.6.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
