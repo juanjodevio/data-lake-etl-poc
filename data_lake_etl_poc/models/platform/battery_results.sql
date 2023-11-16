@@ -24,7 +24,7 @@ select battery_result_id,
 	battery_metrics,
 	assessment_results,
 	org_id,
-    cast(battery_result_date as timestamp(6) with time zone) battery_result_date,
+    cast(battery_result_date as timestamp(6) with time zone) battery_result_date,  -- cast to timestamp(6) with time zone due to iceberg data type mismatch
 	date_format(battery_result_date, '%Y') battery_end_year,
 	date_format(battery_result_date, '%m') battery_end_month
 from cta
