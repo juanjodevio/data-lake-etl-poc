@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: standard_export
+    description: "Table that contains data for standard export"
+    columns:
+      - name: battery_result_date
+        description: "Battery result date"
+      - name: first_name
+        description: "Participant first name"
+      - name: last_name
+        description: "Participant last name"
+      - name: handedness
+        description: "Handedness"
+      - name: battery_name
+        description: "Battery name"
+      - name: battery_metrics
+        description: "Array with battery metrics"

@@ -1,0 +1,68 @@
+version: 2
+
+sources:
+  - name: datalake-landing
+    database: awsdatacatalog
+    schema: datalake-landing
+    tables:
+      - name: rds
+
+models:
+  - name: participants
+    description: "Table that contains the participant data"
+    columns:
+      - name: battery_result_id
+        description: "Battery result id"
+        tests:
+          - unique
+          - not_null
+      - name: org_id
+        description: "Company internal organization uuid"
+        tests:
+          - not_null
+      - name: battery_end_year
+        description: "Battery end year"
+        tests:
+          - not_null
+      - name: battery_end_month
+        description: "Battery end month"
+        tests:
+          - not_null
+      - name: participant_id
+        description: "Company internal participant uuid"
+        tests:
+          - not_null
+      - name: first_name
+        description: "Participant first name"
+      - name: last_name
+        description: "Participant last name"
+      - name: handedness
+        description: "Handedness"
+      - name: email
+        description: "Participant first name"
+  - name: battery_results
+    description: "Table that contains the battery results data"
+    columns:
+      - name: battery_result_id
+        description: "Battery result id"
+        tests:
+          - unique
+          - not_null
+      - name: org_id
+        description: "Company internal organization uuid"
+        tests:
+          - not_null
+      - name: battery_end_year
+        description: "Battery end year"
+        tests:
+          - not_null
+      - name: battery_end_month
+        description: "Battery end month"
+        tests:
+          - not_null
+      - name: battery_name
+        description: "Battery name"
+      - name: battery_metrics
+        description: "Array with battery metrics"
+      - name: assesssment_results
+        description: "Array with assessment results"

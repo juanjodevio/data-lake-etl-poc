@@ -1,0 +1,14 @@
+data_lake_etl_poc:
+  outputs:
+    dev:
+      aws_profile_name: juanjodevio
+      database: awsdatacatalog
+      region_name: us-east-1
+      s3_data_dir: s3://target-508632573795-us-east-1/database/
+      s3_staging_dir: s3://staging-508632573795-us-east-1/query_results/
+      schema: platform
+      s3_data_naming: schema_table_unique
+      seed_s3_upload_args: {"ACL": "bucket-owner-full-control"}
+      threads: 4
+      type: athena
+  target: dev
