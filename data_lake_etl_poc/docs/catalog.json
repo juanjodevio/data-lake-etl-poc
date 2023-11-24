@@ -1,0 +1,1 @@
+{"metadata": {"dbt_schema_version": "https://schemas.getdbt.com/dbt/catalog/v1.json", "dbt_version": "1.6.5", "generated_at": "2023-11-17T15:07:09.654186Z", "invocation_id": "c7ae6852-5fb2-4115-9164-5b348b9d89ad", "env": {}}, "nodes": {}, "sources": {}, "errors": ["An error occurred (EntityNotFoundException) when calling the GetTables operation: Database platform not found."]}
